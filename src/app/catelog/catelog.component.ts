@@ -16,8 +16,8 @@ export class CatelogComponent implements OnInit {
   profiles: FirebaseListObservable<any[]>;
 
 
-  goToDetailPage(clickedProfile: Profile) {
-    this.router.navigate(['profiles', clickedProfile.id]);
+  goToDetailPage(clickedProfile) {
+    this.router.navigate(['profiles', clickedProfile.$key]);
   };
 
   ngOnInit() {

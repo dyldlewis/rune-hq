@@ -15,11 +15,11 @@ export class ProfileService {
     return this.profiles;
   }
 
-  getProfileById(profileId: number){
-  for (var i = 0; i <= PROFILES.length - 1; i++) {
-    if (PROFILES[i].id === profileId) {
-      return PROFILES[i];
-    }
-  }
+  addProfile(newProfile: Profile) {
+  this.profiles.push(newProfile);
 }
+
+  getProfileById(profileId: string){
+    return this.database.object('profiles/' + profileId);
+  }
 }

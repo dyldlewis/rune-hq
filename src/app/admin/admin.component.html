@@ -1,0 +1,31 @@
+<div class="panel panle-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a profile to the Catelog</h3>
+  </div>
+  <div  class="panel-body">
+    <div>
+      <label>Profile name</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Profile level</label>
+      <br>
+      <input #newLevel>
+    </div>
+
+    <div>
+      <label>Net Worth</label>
+      <br>
+      <input #newNetWorth>
+    </div>
+
+    <div>
+      <label>Profile Picture</label>
+      <br>
+      <input #newProfilePicture>
+    </div>
+    <button (click)="submitForm(newName.value, newLevel.value, newNetWorth.value, newProfilePicture.value); newName.value=''; newLevel.value=''; newNetWorth.value=''; newProfilePicture.value=''">Add</button>
+  </div>
+</div>

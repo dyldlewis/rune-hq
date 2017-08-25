@@ -1,6 +1,6 @@
 <div>
-  <h3>{{profileToDisplay.name}}</h3>
-  <h4>level: {{profileToDisplay.level}}</h4>
-  <img src={{profileToDisplay.profilePicture}}>
-  <p>Networth: {{profileToDisplay.netWorth}} million</p>
+  <h3>{{(profileToDisplay | async).name}}</h3>
+  <h4>level: {{(profileToDisplay | async).level}}</h4>
+  <img src="{{(profileToDisplay | async).profilePicture}}">
+  <p>Networth: {{(profileToDisplay | async).netWorth}} million</p>
 </div>
