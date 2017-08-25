@@ -13,9 +13,19 @@ You will need the following things properly installed on your computer.
 * [typeScript](https://www.learnhowtoprogram.com/javascript/angular-js/typescript-introduction-and-installation)
 
 ## Installation
-
 * `git clone <https://github.com/dyldlewis/zoo-project>` this repository
 * `cd rune-hq`
+* [Make sure you have a firebase account and have created a fresh project for this app](https://firebase.google.com/)
+* `touch src/app/api-keys.ts`
+* Open your api-keys.ts file and copy the following text, replacing the strings with your relevant firebase information
+`export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };` (you can find these variables by clicking "Add firebase to your web app" on your projects home page)
+* close and save
 * `npm install`
 * `bower install`
 
