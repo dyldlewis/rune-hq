@@ -1,0 +1,21 @@
+{
+  "profiles": [{
+    "name": "JohnyJenkins",
+    "level": 122,
+    "netWorth": 150,
+    "profilePicture": "http://cdn.runescape.com/assets/img/external/oldschool/2016/dev-blogs/tma/september/tma_sep16_pyromancer.png",
+    "id": 1
+  }, {
+    "name": "Zezima",
+    "level": 126,
+    "netWorth": 500,
+    "profilePicture": "https://vignette2.wikia.nocookie.net/2007scape/images/3/3a/Vannaka.png/revision/latest?cb=20150905010845",
+    "id": 2
+  }, {
+    "name": "Debian",
+    "level": 115,
+    "netWorth": 100,
+    "profilePicture": "https://vignette4.wikia.nocookie.net/2007scape/images/2/25/Dharok%27s_armour_equipped.png/revision/latest?cb=20160205064915",
+    "id": 3
+    }]
+}

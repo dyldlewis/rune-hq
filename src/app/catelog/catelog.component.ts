@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Profile } from '../profile.model'
 import { Router } from '@angular/router';
 import { ProfileService } from '../profile.service'
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-catelog',
@@ -12,7 +13,7 @@ import { ProfileService } from '../profile.service'
 export class CatelogComponent implements OnInit {
   constructor(private router: Router, private profileService: ProfileService) { }
 
-  profiles: Profile[];
+  profiles: FirebaseListObservable<any[]>;
 
 
   goToDetailPage(clickedProfile: Profile) {
