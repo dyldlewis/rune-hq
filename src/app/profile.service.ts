@@ -23,11 +23,15 @@ export class ProfileService {
   }
 
   updateProfile(localUpdatedProfile){
-  var profileEntryInFirebase = this.getProfileById(localUpdatedProfile.$key);
-  profileEntryInFirebase.update({name: localUpdatedProfile.name,
-                              level: localUpdatedProfile.level,
-                              netWorth: localUpdatedProfile.netWorth,
-                            profilePicutre: localUpdatedProfile.profilePicture});
-}
+    var profileEntryInFirebase = this.getProfileById(localUpdatedProfile.$key);
+    profileEntryInFirebase.update({name: localUpdatedProfile.name,
+                                level: localUpdatedProfile.level,
+                                netWorth: localUpdatedProfile.netWorth,
+                              profilePicutre: localUpdatedProfile.profilePicture});
+  }
 
+  deleteProfile(localProfileToDelete){
+    var profileEntryInFirebase = this.getProfileById(localProfileToDelete.$key);
+    profileEntryInFirebase.remove();
+  }
 }
