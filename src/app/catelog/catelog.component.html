@@ -1,7 +1,12 @@
 <h2>Catelog</h2>
 
-<div *ngFor="let profile of profiles | async" (click)="goToDetailPage(profile)" class="panel panel-default">
+<div *ngFor="let profile of profiles | async"  class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{profile.name}}</em> level {{profile.level}}</h3>
+    <h3 (click)="goToDetailPage(profile)"><em>{{profile.name}}</em> level {{profile.level}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{profilename}}
+      <hr>
+      <app-edit-profile [selectedProfile]="profile"></app-edit-profile>
+    </div>
   </div>
 </div>

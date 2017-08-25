@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Profile } from './profile.model';
-import { PROFILES } from './mock-profiles';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -22,4 +21,13 @@ export class ProfileService {
   getProfileById(profileId: string){
     return this.database.object('profiles/' + profileId);
   }
+
+  updateProfile(localUpdatedProfile){
+  var profileEntryInFirebase = this.getProfileById(localUpdatedProfile.$key);
+  profileEntryInFirebase.update({name: localUpdatedProfile.name,
+                              level: localUpdatedProfile.level,
+                              netWorth: localUpdatedProfile.netWorth,
+                            profilePicutre: localUpdatedProfile.profilePicture});
+}
+
 }

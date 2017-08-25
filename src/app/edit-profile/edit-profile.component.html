@@ -1,0 +1,18 @@
+<h4>Edit Album</h4>
+
+<label>New Profile Name:</label>
+<input [(ngModel)]="selectedProfile.name">
+<br>
+
+<label>New Profile Level:</label>
+<input [(ngModel)]="selectedProfile.level">
+<br>
+
+<label>New Profile Net Worth:</label>
+<input [(ngModel)]="selectedProfile.netWorth">
+<br>
+
+<label>New Profile Picutre:</label>
+<input [(ngModel)]="selectedProfile.profilePicture">
+
+<button (click)="beginUpdatingProfile(selectedProfile)">Update</button>

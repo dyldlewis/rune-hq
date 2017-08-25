@@ -11,10 +11,10 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ProfileService]
 })
 export class CatelogComponent implements OnInit {
-  constructor(private router: Router, private profileService: ProfileService) { }
-
+  currentRoute: string = this.router.url;
   profiles: FirebaseListObservable<any[]>;
 
+  constructor(private router: Router, private profileService: ProfileService) { }
 
   goToDetailPage(clickedProfile) {
     this.router.navigate(['profiles', clickedProfile.$key]);
