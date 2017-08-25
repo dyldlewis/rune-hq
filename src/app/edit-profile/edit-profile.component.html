@@ -15,6 +15,6 @@
 <label>New Profile Picutre:</label>
 <input [(ngModel)]="selectedProfile.profilePicture">
 
-<button (click)="beginUpdatingProfile(selectedProfile)">Update</button>
+<button class="btn btn-success" (click)="beginUpdatingProfile(selectedProfile)">Update</button>
 
-<button (click)="beginDeletingProfile(selectedProfile)">Delete</button>
+<button class="btn btn-danger" (click)="beginDeletingProfile(selectedProfile)">Delete</button>

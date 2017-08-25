@@ -1,17 +1,17 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid item">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Rune HQ</a>
+      <a class="navbar-brand" routerLink=""><span class="logo">Rune HQ</span><img class="dagger" src="http://vignette2.wikia.nocookie.net/runescape2/images/4/42/Dragon_dagger_%28p%2B%2B%29_detail.png/revision/latest?cb=20110917221150"></a>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="about">About</a></li>
-      <li><a routerLink="catelog">Catelog</a></li>
+      <li><a routerLink="catelog">Catalog</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
-  <h1>{{title}}</h1>
+  <h1 class="runeHq">{{title}}</h1>
   <router-outlet></router-outlet>
 </div>
 
