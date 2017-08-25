@@ -1,6 +1,6 @@
 <h2>Marketplace</h2>
 
-<div *ngFor="let profile of profiles" class="panel panel-default">
+<div *ngFor="let profile of profiles" (click)="goToDetailPage(profile)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{profile.name}}</em> level {{profile.level}}</h3>
   </div>

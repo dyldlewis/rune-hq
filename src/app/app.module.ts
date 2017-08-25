@@ -8,13 +8,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { CatelogComponent } from './catelog/catelog.component';
+import { ProfileDetailComponent } from './profile-detail/profile-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     AboutComponent,
-    CatelogComponent
+    CatelogComponent,
+    ProfileDetailComponent
   ],
   imports: [
     BrowserModule,
